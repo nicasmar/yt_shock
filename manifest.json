@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shock Therapy",
+  "version": "1.0",
+  "description": "Interrupts endless scrolling on YouTube Shorts with humor and self-reflection.",
+  "permissions": ["activeTab", "storage", "activeTab", "tabs", "webNavigation"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "optional_permissions": ["camera"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
