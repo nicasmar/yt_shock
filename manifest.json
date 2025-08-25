@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Self-Regulation",
   "version": "1.0.0",
-  "description": "Interrupts endless scrolling on YouTube Shorts with a reflective feedback overlay.",
+  "description": "Interrupts endless scrolling on YouTube Shorts.",
   "permissions": ["activeTab", "tabs", "storage", "webNavigation"],
   "host_permissions": ["https://www.youtube.com/*"],
   "content_scripts": [
